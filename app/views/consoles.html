@@ -1,1 +1,6 @@
 <h1>CONSOLES</h1>
+
+<div ng-repeat="console in consoles" id="console_box">
+  <a ng-href="#/consoles/{{console.$id}}" ng-click="gamesPage(console.$id)"><div class="{{console.$id}}"></div></a>
+</div>
+
